@@ -5,6 +5,27 @@
 
 $gray-medium-light: #eaeaea;
 
+/* universal */
+
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
 @mixin box_sizing {
   -moz-box-sizing:    border-box;
   -webkit-box-sizing: border-box;
@@ -15,7 +36,7 @@ $gray-medium-light: #eaeaea;
 
 #logo {
   float: left;
-  margin-right: 10px;
+  margin-right: 1px;
   font-size: 1.7em;
   color: #fff;
   text-transform: uppercase;
@@ -34,8 +55,8 @@ $gray-medium-light: #eaeaea;
 .debug_dump {
   clear: both;
   float: left;
-  width: 100%;
-  margin-top: 45px;
+  width: 50%;
+  margin-top: 40px;
   @include box_sizing;
 }
 /* footer */

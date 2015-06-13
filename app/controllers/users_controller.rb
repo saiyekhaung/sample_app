@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  class UsersController < ApplicationController
    before_action :logged_in_user, only: [:index, :edit, :update, :destroy,
                                          :following, :followers]
  before_action :admin_user,     only: :destroy
@@ -70,7 +69,7 @@ class UsersController < ApplicationController
   end
 
   # Confirms an admin user.
-    def admin_user
+  def admin_user
       redirect_to(root_url) unless current_user.admin?
     end
-end
+  end
